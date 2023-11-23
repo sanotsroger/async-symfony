@@ -15,6 +15,11 @@ class StockTransactionController extends AbstractController
     {
         $order = new class
         {
+            public function getid(): int
+            {
+                return 1;
+            }
+
             public function getBuyer(): object
             {
                 return new class
