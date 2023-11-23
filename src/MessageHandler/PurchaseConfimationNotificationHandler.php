@@ -2,13 +2,13 @@
 
 namespace App\MessageHandler;
 
-use App\Message\PurchaseConfimationNotification;
+use App\Message\PurchaseConfirmationNotification;
 use Symfony\Component\Messenger\Attribute\AsMessageHandler;
 
-#[AsMessageHandler()]
+#[AsMessageHandler]
 class PurchaseConfimationNotificationHandler
 {
-    public function __invoke(PurchaseConfimationNotification $notification)
+    public function __invoke(PurchaseConfirmationNotification $notification)
     {
         // Create PDF
         echo 'Create PDF ...<br/>';
